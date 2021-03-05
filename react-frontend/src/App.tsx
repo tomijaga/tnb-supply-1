@@ -1,8 +1,8 @@
 import React from "react";
-import { Grid, Layout, Table } from "antd";
+import { Layout, Table } from "antd";
 import { ColumnsType } from "antd/es/table";
 import { Pie } from "@ant-design/charts";
-import GitHubButton from "react-github-btn";
+// import GitHubButton from "react-github-btn";
 import "./App.css";
 
 import logo from "./30px.png";
@@ -119,7 +119,7 @@ const tableColumn: ColumnsType<any> = [
 ];
 
 function App() {
-  const screens = Grid.useBreakpoint();
+  // const screens = Grid.useBreakpoint();
   return (
     <>
       <Layout className="App" style={{ minHeight: "100vh" }}>
