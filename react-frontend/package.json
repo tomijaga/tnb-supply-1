@@ -13,6 +13,7 @@
     "@types/react-dom": "^16.8.4",
     "antd": "^4.13.0",
     "antd-pro-charts": "^0.0.1",
+    "axios": "^0.21.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-github-btn": "^1.2.0",
