@@ -1,8 +1,7 @@
 import React from "react";
-import { Card, Col, Layout, Row, Table } from "antd";
-import { ColumnsType, TableProps } from "antd/es/table";
+import { Grid, Layout, Table } from "antd";
+import { ColumnsType } from "antd/es/table";
 import { Pie } from "@ant-design/charts";
-import axios from "axios";
 import GitHubButton from "react-github-btn";
 import "./App.css";
 
@@ -12,7 +11,7 @@ import { formatNumber } from "./utils/formatNumber";
 const data = [
   {
     section: "Accounts on Tnb and Project Teams ",
-    amount: 968820,
+    amount: 2253132,
   },
   {
     section: "Completed Tasks",
@@ -20,16 +19,16 @@ const data = [
   },
   {
     section: "Non Team Members",
-    amount: 7473678,
+    amount: 7920418,
   },
 
   {
     section: "Project Teams",
-    amount: 3947916,
+    amount: 3354437,
   },
   {
     section: "Tnb Teams",
-    amount: 15385314,
+    amount: 14341474,
   },
 ];
 const total = data.reduce((acc, { amount }) => acc + amount, 0);
@@ -119,37 +118,17 @@ const tableColumn: ColumnsType<any> = [
   },
 ];
 
-const salesPieData = [
-  {
-    x: "家用电器",
-    y: 4544,
-  },
-  {
-    x: "食用酒水",
-    y: 3321,
-  },
-  {
-    x: "个护健康",
-    y: 3113,
-  },
-  {
-    x: "服饰箱包",
-    y: 2341,
-  },
-  {
-    x: "母婴产品",
-    y: 1231,
-  },
-  {
-    x: "其他",
-    y: 1231,
-  },
-];
 function App() {
+  const screens = Grid.useBreakpoint();
   return (
     <>
       <Layout className="App" style={{ minHeight: "100vh" }}>
-        <Layout.Header style={{ padding: "40px 10vw" }}>
+        <Layout.Header
+          style={{
+            padding: "30px 10vw",
+            boxShadow: "100px 100px 100px 100px rgba(0,0,0,1)",
+          }}
+        >
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <div style={{ display: "flex", alignItems: "center" }}>
               <img src={logo} alt="Tnb" />
@@ -166,6 +145,16 @@ function App() {
               </div>
             </div>
 
+            {/* <GitHubButton
+              href="https://github.com/tomijaga/tnb-supply-1"
+              data-color-scheme="no-preference: light; light: light; dark: dark;"
+              data-icon="octicon-star"
+              data-size="large"
+              data-show-count="true"
+              aria-label="Star tomijaga/tnb-supply-1 on GitHub"
+            >
+              Star
+            </GitHubButton>
             <GitHubButton
               href="https://github.com/tomijaga"
               data-color-scheme="dark"
@@ -173,8 +162,8 @@ function App() {
               data-show-count="true"
               aria-label="Follow @tomijaga on GitHub"
             >
-              Follow @tomijaga
-            </GitHubButton>
+              @tomijaga
+            </GitHubButton> */}
           </div>
         </Layout.Header>
         <Layout.Content
@@ -183,10 +172,10 @@ function App() {
             height: "100%",
             background: "#f0f2f5",
             color: "black",
+            boxShadow: "inset 0px 5px 10px 0px rgba(0,0,0,0.3)",
           }}
         >
           <Pie {...chartConfig} style={{ maxWidth: "1000px" }} />
-
           <div
             style={{
               display: "flex",
@@ -205,7 +194,7 @@ function App() {
           }}
         >
           <h4 style={{ textAlign: "center" }}>
-            {"These results may a have an error margin between 1%-5%."}
+            {"These results may have error margins between 1%-5%."}
           </h4>
 
           <div

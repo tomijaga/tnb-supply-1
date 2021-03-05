@@ -457,7 +457,7 @@ Website,Update Docs for Bank - Invalid Blocks,957,981,VincentHch,1000,FALSE,aaf4
 Website,Mobile drop-down menu blocking logo & icon during animation,582,1118,SirDaev,1000,FALSE,e5c2ff3c4f6886fd7cd87002d83c6aabe48e585ce38026c0df6ea7c517e0f7a4
 Website,Add Twitch link to Social Media page,1131,1132,jamessspanggg,500,FALSE,c54c04774efaae20746fd3f29cdd619fea512e119bc1082b863572b2e8844104
 thenewboston-js,Implement Payment Handler,51,50,sno2,3000,FALSE,d84543947090d300910f8d1b9604c0c0a56fafca6cfbe52511c1e31757188bca
-thenewboston-js,Implemented post request for bank blocks under primary-validator 😁😁,47,54,nishp77,2500,FALSE,c81061eb20ee1379ab98b6f5a125ebd0955278e36513eabd8d319967bb61d7e8
+thenewboston-js,Implemented post request for bank blocks under primary-validator ,47,54,nishp77,2500,FALSE,c81061eb20ee1379ab98b6f5a125ebd0955278e36513eabd8d319967bb61d7e8
 Validator,Write test for class ConfirmationBlockHistory to cover creation of block history,108,130,DucPhamTV,1000,FALSE,ec5aa47719460ee5bcd16ab3cfe94c521d702eb9fc7d80f603762c23014f8ab8
 Validator,Write a test for function add_block_to_queue to add block to the queue,114,127,DucPhamTV,1000,FALSE,ec5aa47719460ee5bcd16ab3cfe94c521d702eb9fc7d80f603762c23014f8ab8
 Validator,Write a test for function head_block_hash_view() queued_confirmation_blocks_view() and valid_confirmation_blocks_view(),105,126,DucPhamTV,1000,FALSE,ec5aa47719460ee5bcd16ab3cfe94c521d702eb9fc7d80f603762c23014f8ab8

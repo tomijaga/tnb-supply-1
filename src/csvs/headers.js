@@ -10,17 +10,14 @@ export const tasksInputHeaders = [
 ];
 
 export const projectTeamsInputHeaders = [
-  { id: "project_name", title: "project_name" },
-  { id: "display_name", title: "display_name" },
-  { id: "project_leader", title: "project_leader" },
-  { id: "slack_username", title: "slack_username" },
-  { id: "github_username", title: "github_username" },
-  { id: "linkedin_url", title: "linkedin_url" },
-  { id: "role", title: "role" },
-  { id: "pay_per_day", title: "pay_per_day" },
-  { id: "pay", title: "pay" },
-  { id: "account_number", title: "account_number" },
-  { id: "balance", title: "balance" },
+  { id: "PROJECT NAME", title: "project_name" },
+  { id: "DISPLAY NAME", title: "display_name" },
+  { id: "PROJECT LEADER", title: "project_leader" },
+  { id: "GITHUB USERNAME", title: "github_username" },
+  { id: "ROLE", title: "role" },
+  { id: "TEAM JOINING DATE", title: "date_joined" },
+  { id: "Pay (YES / NO)", title: "pay" },
+  { id: "ACCOUNT NUMBER", title: "account_number" },
 ];
 
 export const tasksOutputHeaders = [
